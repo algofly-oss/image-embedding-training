@@ -1,18 +1,4 @@
-import os, glob
-import pandas as pd
 import cv2
-import numpy as np
-from tqdm import tqdm
-import hashlib
-
-class LabelEncoder:
-    def __init__(self, classes):
-        self.class2id = {cls:id for id, cls in enumerate(classes)}
-        self.id2class = {id:cls for cls, id in self.class2id.items()}
-    
-    def __repr__(self):
-        return str(self.class2id)
-
 
 def resize_and_pad_image_cv2(img, target_size=224):
     try:

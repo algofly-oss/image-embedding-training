@@ -8,6 +8,7 @@ downloads/
 models/
 output/
 trained_model/
+weights/
 
 # C extensions
 *.so
